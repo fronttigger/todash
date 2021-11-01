@@ -13,12 +13,20 @@ describe('capitalzie', () => {
     expect(capitalzie('fred')).toEqual('Fred');
   });
 
+  it('전체가 대문자 단어는 첫 문자를 제외 나머지를 소문자로 변경되어 반환한다.', () => {
+    expect(capitalzie('FRED')).toEqual('Fred');
+  });
+
   it('숫자를 첫 글자에 포함한 문자는 있는 그대로 반환된다.', () => {
     expect(capitalzie('1234fred')).toEqual('1234fred');
   });
 
   it('문자를 첫 글자에 포함한 혼합 문자는 첫 문자를 대문자로 변경되어 반환된다.', () => {
     expect(capitalzie('sdf@#@!12')).toEqual('Sdf@#@!12');
+  });
+
+  it('첫 문자가 문자열이 아닌 경우는 모두 소문자로 반환한다.', () => {
+    expect(capitalzie('123ABC321')).toEqual('123abc321');
   });
 
   it('공백에 대해 따로 처리하지 않는다.', () => {
