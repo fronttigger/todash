@@ -7,7 +7,7 @@ function capitalize(value?: string | number): string {
     return value.toString();
   }
 
-  const stringToArray = value.split('');
+  const stringToArray = value.toLowerCase().split('');
   stringToArray[0] = value[0].toUpperCase();
 
   return stringToArray.join('');
