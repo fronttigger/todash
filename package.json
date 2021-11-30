@@ -1,5 +1,5 @@
 {
-  "name": "lodash-clone",
+  "name": "todash",
   "version": "1.0.0",
   "description": "lodash clone",
   "main": "index.js",
@@ -9,15 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fronttigger/lodash-clone.git"
+    "url": "git+https://github.com/fronttigger/todash.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Lodash"
+  ],
+  "author": "fronttigger",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fronttigger/lodash-clone/issues"
+    "url": "https://github.com/fronttigger/todash/issues"
   },
-  "homepage": "https://github.com/fronttigger/lodash-clone#readme",
+  "homepage": "https://github.com/fronttigger/todash#readme",
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/node": "^7.15.8",
